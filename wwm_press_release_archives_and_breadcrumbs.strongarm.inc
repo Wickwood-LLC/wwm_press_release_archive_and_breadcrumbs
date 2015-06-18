@@ -156,5 +156,12 @@ function wwm_press_release_archives_and_breadcrumbs_strongarm() {
   $strongarm->value = 0;
   $export['node_submitted_press_release'] = $strongarm;
 
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_press_release_pattern';
+  $strongarm->value = 'press-releases/[node:published:custom:Y]/[node:published:custom:m]/[node:published:custom:d]/[node:title]';
+  $export['pathauto_node_press_release_pattern'] = $strongarm;
+
   return $export;
 }

@@ -12,7 +12,7 @@ function wwm_press_release_archives_and_breadcrumbs_views_default_views() {
 
   $view = new view();
   $view->name = 'press_releases';
-  $view->description = 'A articles with features similar to those provided by WordPress.';
+  $view->description = 'A "blog archive" of Press Releases.';
   $view->tag = '';
   $view->base_table = 'node';
   $view->human_name = 'Press Releases';
@@ -118,7 +118,7 @@ function wwm_press_release_archives_and_breadcrumbs_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['style_plugin'] = 'rss';
   $handler->display->display_options['row_plugin'] = 'node_rss';
-  $handler->display->display_options['path'] = 'article/%/%/%/rss.xml';
+  $handler->display->display_options['path'] = 'press-releases/%/%/%/rss.xml';
   $handler->display->display_options['displays'] = array(
     'page_1' => 'page_1',
     'default' => 0,
