@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the WWM Press Release Archives and Breadcrumbs feature.
+ */
+
+include_once 'wwm_press_release_archives_and_breadcrumbs.features.inc';
