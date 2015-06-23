@@ -28,6 +28,7 @@ function wwm_press_release_archives_and_breadcrumbs_custom_breadcrumb_features_d
 
   // Exported custom breadcrumb: press_releases.
   $custom_breadcrumbs['press_releases'] = array(
+    'name' => 'Press Releases',
     'titles' => 'Press Releases
 [node:published:custom:Y]
 [node:published:custom:F]
@@ -39,7 +40,6 @@ press-releases/[node:published:custom:Y]/[node:published:custom:m]/[node:publish
     'visibility_php' => '',
     'node_type' => 'press_release',
     'language' => '',
-    'name' => 'Press Releases',
     'machine_name' => 'press_releases',
   );
 
