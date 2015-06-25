@@ -51,9 +51,52 @@ function wwm_press_release_archives_and_breadcrumbs_field_default_field_instance
     'entity_type' => 'node',
     'field_name' => 'body',
     'label' => 'Story',
+    'readmore_behaviour' => 'default',
     'required' => 1,
     'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          1 => 0,
+          2 => 0,
+          3 => 0,
+          4 => 4,
+          5 => 0,
+        ),
+        'allowed_formats_toggle' => 1,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            1 => array(
+              'weight' => -1,
+            ),
+            2 => array(
+              'weight' => 0,
+            ),
+            3 => array(
+              'weight' => 0,
+            ),
+            4 => array(
+              'weight' => 0,
+            ),
+            5 => array(
+              'weight' => 1,
+            ),
+          ),
+        ),
+      ),
       'display_summary' => 1,
+      'linkit' => array(
+        'button_text' => 'Search',
+        'enable' => 0,
+        'profile' => '',
+      ),
+      'mediafront' => array(
+        'custom' => '',
+        'field_type' => 0,
+        'media_type' => 'media',
+        'preview' => 0,
+        'thumbnail' => 0,
+      ),
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
